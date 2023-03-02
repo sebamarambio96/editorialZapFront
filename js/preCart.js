@@ -1,5 +1,5 @@
 
-fetch("http://18.223.117.204:3000/products")
+fetch("http://18.223.117.204/products")
     .then((resp) => resp.json())
     .then(data => {
 
@@ -90,7 +90,7 @@ fetch("http://18.223.117.204:3000/products")
             btn.forEach(btn => {
                 btn.addEventListener('click', () => {
                     let producto = {}
-                    fetch(`http://18.223.117.204:3000/products/${btn.dataset.id}`)
+                    fetch(`http://18.223.117.204/products/${btn.dataset.id}`)
                         .then((resp) => resp.json())
                         .then(data => {
                             const product = data

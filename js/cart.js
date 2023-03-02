@@ -1,4 +1,4 @@
-fetch("http://18.223.117.204/products")
+fetch("https://18.223.117.204/products")
     .then((resp) => resp.json())
     .then(data => {
         const productos = data
@@ -216,7 +216,7 @@ function sendOrder() {
                 text: 'El rut ingresado no es valido'
             })
         } else {
-            fetch(`http://18.223.117.204/addOrder/`, {
+            fetch(`https://18.223.117.204/addOrder/`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

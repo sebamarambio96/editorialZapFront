@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Paz</title>
+    <!-- <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/preCartPages.js"></script>
+    <script defer src="../js/contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navEstilo fixed-top">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/favicon.png" alt="logo !Zap!" width="60" height="60">
+                    </a>
+                </div>
+                <button class="navbar-toggler navbar-light botonHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./aboutUs.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./products.html">LIBROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contact.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="login.html"><button type="button" class="btn btn-dark botonLogin">Ingresa</button></a>
+                <form class="d-flex">
+                    <button id="btnCompras" class="btn botonCarrito " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="bi bi-cart"></i>
+                        Compras
+                        <span id="contadorCompras" class="badge bg-dark text-white ms-1 rounded-pill">0</span></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header ">
+                            <h5 id="offcanvasRightLabel">Resumen del Carrito:</h5>
+                            <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div id="containerCompras" class="offcanvas-body">
+                            <!-- Aquí se genera un off canvas con un resumen del carrito -->
+                        </div>
+                        <div class="d-flex align-items-end border-top p-3 container ">
+                            <a href="carT.html" type="button" class="btn  botonCarrito w-100">Ir al Carrito</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="relleno"></div>
+    <main class="mainInicio">
+        <div class="container">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 pb-2">¿Tienes dudas? &nbsp;&nbsp; <span
+                            class="colorFont">Contáctanos</span>
+                    </h1>
+                    <p class="lead">
+                    <form>
+                        <div class="form-outline mb-2">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" id="formName" class="form-control" placeholder="Stan Lee" />
+                        </div>
+
+                        <div class="form-outline mb-2">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="form4Email" class="form-control"
+                                placeholder="juanito.perez@gmail.com" />
+                        </div>
+
+                        <div class="form-outline mb-2">
+                            <label class="form-label" f>Mensaje</label>
+                            <textarea class="form-control" id="form4Message" rows="4" style="resize: none;"
+                                placeholder="Deja tu mensaje aquí"></textarea>
+                        </div>
+
+                        <!-- <div class="form-check d-flex justify-content-center mb-2">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                            <label class="form-check-label" >Enviarme una copia de mi mensaje</label>
+                        </div> -->
+
+                        <button type="button" id="formSend" class="btn btn-block mb-2 botonCarrito">Enviar</button>
+                    </form>
+                    </p>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3 imgDeco" src="../img/imagenContacto.jpg" alt="Libros Harry Potter">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="">
+
+    </section>
+
+    <footer class="footerb footer_style">
+        <ul class="footerLista animacion">
+            <li>
+                <h3 class="footer_h3">Redes Sociales</h3>
+            </li>
+            <li class="link"><a href="https://www.facebook.com/">Facebook</a></li>
+            <li class="link"><a href="https://www.instagram.com/">Instagram</a></li>
+            <li class="link"><a href="https://www.tiktok.com/">Tik Tok</a></li>
+        </ul>
+        <ul class="footerLista animacion">
+            <li>
+                <h3 class="footer_h3">Contacto</h3>
+            </li>
+            <li class="link">Wsp: +569 555 555 55</li>
+        </ul>
+    </footer>
+
+    <!--     <footer class="container-fluid footerInicio navEstilo">
+            <p class="float-end"><a href="#">Volver arriba</a></p>
+            <p>Copyright 2022© <a href="#">Privacidad</a> &middot; <a href="#">Términos de uso y
+                    condiciones</a></p>
+        </footer> -->
+
+    <template id="templateCompras">
+        <div class="nodo card">
+            <div class="card-body d-flex justify-content-between">
+                <div>
+                    <h6 id="tituloProductoCompras"><b>Titulo del libro</b></h6>
+                    <p id="cantidadProductoCompras" class="fontProducto">Cantidad</p>
+                    <p id="precioProductoCompras" class="fontProducto">PRECIO</p>
+                </div>
+                <img id="imgProductoCompras" class="" src="#" alt="#" width="75" height="100">
+            </div>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

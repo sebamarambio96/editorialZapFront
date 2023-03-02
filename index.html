@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial !ZAP!</title>
+    <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href=./css/style.css>
+    <script defer src="./js/preCartIndex.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navEstilo fixed-top">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/favicon.png" alt="logo !Zap!" width="60" height="60">
+                    </a>
+                </div>
+                <button class="navbar-toggler navbar-light botonHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/aboutUs.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/products.html">LIBROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/contact.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="pages/login.html"><button type="button" class="btn btn-dark botonLogin">Ingresa</button></a>
+
+                <form class="d-flex">
+                    <button id="btnCompras" class="btn botonCarrito " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="bi bi-cart"></i>
+                        Compras
+                        <span id="contadorCompras" class="badge bg-dark text-white ms-1 rounded-pill">0</span></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header ">
+                            <h5 id="offcanvasRightLabel">Resumen del Carrito:</h5>
+                            <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div id="containerCompras" class="offcanvas-body">
+                            <!-- Aquí se genera un off canvas con un resumen del carrito -->
+                        </div>
+                        <div class="d-flex align-items-end border-top p-3 container ">
+                            <a href="pages/cart.html" type="button" class="btn  botonCarrito w-100">Ir al Carrito</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainInicio d-flex align-items-center">
+        <div class="container mt-5">
+            <div class="row align-items-center rounded-3 mt-5">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 mt-5">
+                    <h1 class="display-4 fw-bold lh-1 pb-5">Ven y descubre, &nbsp;&nbsp; <span
+                            class="colorFont">Editorial !ZAP!</span>
+                    </h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ullam expedita, nihil
+                        molestiae ratione non itaque esse magni optio amet distinctio numquam sunt deserunt vel
+                        explicabo dolor quasi placeat, repellendus, dicta error nostrum.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 py-4">
+                        <a href="pages/products.html"><button type="button"
+                                class="btn btn-primary btn-lg px-4 my-4 me-md-2 fw-bold botonEstilo">Productos</button></a>
+                        <a href="pages/contact.html"><button type="button"
+                                class="btn btn-outline-secondary btn-lg px-4 my-4">Contacto</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3" src="img/hero.jpg" alt="Libros Harry Potter" width="720">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="sectionInicio">
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Categorías</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(img/sectionIndex1.jpg); background-size:cover;
+                        background-repeat: no-repeat;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <a href="pages/products.html#estiloCategoria1" class="linkProductos">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Horror cósmico</h2>
+                            </a>
+                            <div class="desaparecer"></div>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="img/faviconSection1.jpg" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/sectionIndex2.jpg); background-size:cover;
+                        background-repeat: no-repeat;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <a href="pages/products.html#estiloCategoria2" class="linkProductos">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mangas</h2>
+                            </a>
+                            <div class="desaparecer"></div>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="img/faviconSection2.jpg" alt="Terror Cósmico" width="32"
+                                        height="32" class="rounded-circle border border-white">
+                                </li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/sectionIndex3.jpg); background-size:cover;
+                        background-repeat: no-repeat;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <a href="pages/products.html#estiloCategoria3" class="linkProductos">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Juvenil</h2>
+                            </a>
+                            <div class="desaparecer"></div>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="img/faviconSection3.jpeg" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footerb footer_style">
+        <ul class="footerLista animacion">
+            <li>
+                <h3 class="footer_h3">Redes Sociales</h3>
+            </li>
+            <li class="link"><a href="https://www.facebook.com/">Facebook</a></li>
+            <li class="link"><a href="https://www.instagram.com/">Instagram</a></li>
+            <li class="link"><a href="https://www.tiktok.com/">Tik Tok</a></li>
+        </ul>
+        <ul class="footerLista animacion">
+            <li>
+                <h3 class="footer_h3">Contacto</h3>
+            </li>
+            <li class="link">Wsp: +569 555 555 55</li>
+        </ul>
+    </footer>
+
+    <!--     <footer class="container-fluid footerInicio navEstilo">
+        <p class="float-end"><a href="#">Volver arriba</a></p>
+        <p>Copyright 2022© <a href="#">Privacidad</a> &middot; <a href="#">Términos de uso y
+                condiciones</a></p>
+    </footer> -->
+    <template id="templateProducto" class="col mb-5">
+        <div class="card cardProducto">
+            <img id="imgProducto" class="card-img-top" src="#" alt="#" />
+            <div class="card-body p-4">
+                <div class="text-center">
+                    <h4 id="nombreProducto" class="fw-bolder">Titulo del libro</h5>
+                        <h6 id="autorProducto" class="fw-bolder fontProducto">Autor</h5>
+                </div>
+            </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                    <h6 id="precioProducto" class="fontProducto">PRECIO</h6>
+                    <button id="agregarProducto" class="btn btnProducto botonCarrito mt-auto"
+                        href="productos/productoHC1.html">Agregar</button>
+                    <a class="btn btnProducto btn-outline-dark mt-auto" href="productos/productoHC1.html">Detalles</a>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="templateCompras">
+        <div class="nodo card">
+            <div class="card-body d-flex justify-content-between">
+                <div>
+                    <h6 id="tituloProductoCompras"><b>Titulo del libro</b></h6>
+                    <p id="cantidadProductoCompras" class="fontProducto">Cantidad</p>
+                    <p id="precioProductoCompras" class="fontProducto">PRECIO</p>
+                </div>
+                <img id="imgProductoCompras" class="" src="#" alt="#" width="75" height="100">
+            </div>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

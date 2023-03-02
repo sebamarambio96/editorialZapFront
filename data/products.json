@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Naruto tomo 1",
+        "id_category": 3,
+        "author": "Masashi Kishimoto",
+        "price": 8100,
+        "stock": 1000,
+        "img": "../img/Products/Mangas/narutoTomo1.webp"
+    },
+    {
+        "name": "Naruto tomo 2",
+        "id_category": 3,
+        "author": "Masashi Kishimoto",
+        "price": 8200,
+        "stock": 1000,
+        "img": "../img/Products/Mangas/narutoTomo2.jfif"
+    },
+    {
+        "name": "Naruto tomo 3",
+        "id_category": 3,
+        "author": "Masashi Kishimoto",
+        "price": 8300,
+        "stock": 1000,
+        "img": "../img/Products/Mangas/onePieceTomo3.webp"
+    },
+    {
+        "name": "Chainsaw Man Tomo 1",
+        "id_category": 3,
+        "author": "Tatsuki Fujimoto",
+        "price": 8100,
+        "stock": 1000,
+        "img": "../img/Products/Mangas/chainsawManTomo1.jpg"
+    },
+    {
+        "name": "One Piece Español Tomo 1",
+        "id_category": 3,
+        "author": "Eiichirō Oda",
+        "price": 9100,
+        "stock": 1000,
+        "img": "../img/Products/Mangas/onePieceTomo1.jpg"
+    },
+    {
+        "name": "One Piece Español Tomo 2 East Blue",
+        "id_category": 3,
+        "author": "Eiichirō Oda",
+        "price": 9200,
+        "stock": 1000,
+        "img": "../img/Products/Mangas/imgproductoHC11.webp"
+    },
+    {
+        "name": "One Piece Español Tomo 3",
+        "id_category": 3,
+        "author": "Eiichirō Oda",
+        "price": 9300,
+        "stock": 1000,
+        "img": "../img/Products/Mangas/onePieceTomo3.webp"
+    },
+    {
+        "name": "One Piece Español Tomo 4",
+        "id_category": 3,
+        "author": "Eiichirō Oda",
+        "price": 9400,
+        "stock": 1000,
+        "img": "../img/Products/Mangas/onePieceTomo4.jpg"
+    },
+    {
+        "name": "La llamada de Cthulu",
+        "id_category": 1,
+        "author": "H.P Lovecraft",
+        "price": 11100,
+        "stock": 1000,
+        "img": "../img/Products/Horror/llamadaCthulhu.jpg"
+    },
+    {
+        "name": "Dagon",
+        "id_category": 1,
+        "author": "H.P Lovecraft",
+        "price": 11200,
+        "stock": 1000,
+        "img": "../img/Products/Horror/dagon.jpeg"
+    },
+    {
+        "name": "Necronomicon",
+        "id_category": 1,
+        "author": "H.P Lovecraft",
+        "price": 11300,
+        "stock": 1000,
+        "img": "../img/Products/Horror/necronomicon.jpg"
+    },
+    {
+        "name": "Los Pilares de Cthulu",
+        "id_category": 1,
+        "author": "H.P Lovecraft",
+        "price": 11400,
+        "stock": 1000,
+        "img": "../img/Products/Horror/pilaresCthulhu.jfif"
+    },
+    {
+        "name": "La Maldición de Sarnath",
+        "id_category": 1,
+        "author": "H.P Lovecraft",
+        "price": 11500,
+        "stock": 1000,
+        "img": "../img/Products/Horror/maldicionSarnath.jpg"
+    },
+    {
+        "name": "El caso de Charles Dexter Ward",
+        "id_category": 1,
+        "author": "H.P Lovecraft",
+        "price": 11600,
+        "stock": 1000,
+        "img": "../img/Products/Horror/casoCharlesDexter.jpg"
+    },
+    {
+        "name": "La casa en el confín de la Tierra",
+        "id_category": 1,
+        "author": "Richard Corben - Simon Revelstroke",
+        "price": 12100,
+        "stock": 1000,
+        "img": "../img/Products/Horror/casaConfinesTierra.JPG"
+    },
+    {
+        "name": "Los que acechan en el abismo",
+        "id_category": 1,
+        "author": "Brian Lumley",
+        "price": 13100,
+        "stock": 1000,
+        "img": "../img/Products/Horror/habitantesAbismo.jpg"
+    },
+    {
+        "name": "Night Shift",
+        "id_category": 1,
+        "author": "Stephen King",
+        "price": 14100,
+        "stock": 1000,
+        "img": "../img/Products/Horror/nightShift.jpg"
+    },
+    {
+        "name": "IT",
+        "id_category": 1,
+        "author": "Stephen King",
+        "price": 14200,
+        "stock": 1000,
+        "img": "../img/Products/Horror/it.jfif"
+    },
+    {
+        "name": "Harry Potter y la Piedra Filosofal",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15100,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/harryPiedraFilosofal.webp"
+    },
+    {
+        "name": "Harry Potter y la Camara de los Secretos",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15200,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/harryCamaraSecreta.jpg"
+    },
+    {
+        "name": "Harry Potter y Prisionero de Azkaban",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15400,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/harryPrisioneroAzkaban.jpg"
+    },
+    {
+        "name": "Harry Potter y el Caliz de Fuego",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15500,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/harryCalizFuego.webp"
+    },
+    {
+        "name": "Harry Potter y la Orden del Fenix",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15600,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/harryOrdenFenix.jpg"
+    },
+    {
+        "name": "Harry Potter y el Principe Mestizo",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15600,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/harryPrincipeMestizo.webp"
+    },
+    {
+        "name": "Harry Potter y las Reliquias de la Muerte",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15700,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/harryReliquiasMuerte.webp"
+    },
+    {
+        "name": "Coraline",
+        "id_category": 2,
+        "author": "Neil Gaiman",
+        "price": 15800,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/coraline.jpg"
+    },
+    {
+        "name": "Buscando a Alaska",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15900,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/buscandoAlaska.jpg"
+    },
+    {
+        "name": "Animales Fántasticos",
+        "id_category": 2,
+        "author": "J.K Rowling",
+        "price": 15000,
+        "stock": 1000,
+        "img": "../img/Products/Juvenil/animalesFantasticos1.jpg"
+    }
+]

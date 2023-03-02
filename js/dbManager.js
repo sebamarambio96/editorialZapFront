@@ -22,7 +22,7 @@ function modifySearch() {
             containerForm.removeChild(containerForm.firstChild);
         }
 
-        fetch(`https://18.223.117.204/products/${id}`)
+        fetch(`http://18.223.117.204/products/${id}`)
             .then((resp) => resp.json())
             .then(data => {
                 const product = data
@@ -67,9 +67,9 @@ function modifySend(id) {
             img: urlModify
         }
         console.log(data)
-        fetch(`https://18.223.117.204/products/${id}`, {
+        fetch(`http://18.223.117.204/products/${id}`, {
             method: 'PUT',
-            headers: {
+            header: {
                 'Content-type': 'application/json'
             },
             body: JSON.stringify(data)
@@ -102,9 +102,9 @@ function addSend() {
             img: urlModify
         }
         console.log(data)
-        fetch(`https://18.223.117.204/products/`, {
+        fetch(`http://18.223.117.204/products/`, {
             method: 'POST',
-            headers: {
+            header: {
                 'Content-type': 'application/json'
             },
             body: JSON.stringify(data)
@@ -126,7 +126,7 @@ function deleteSend() {
             containerForm.removeChild(containerForm.firstChild);
         } */
 
-        fetch(`https://18.223.117.204/products/${id}`, { method: 'DELETE' })
+        fetch(`http://18.223.117.204/products/${id}`, { method: 'DELETE' })
             .then(data => console.log(data))
             .catch(err => console.log(err))
     })
@@ -178,7 +178,7 @@ function renderCards() {
     const btn = document.getElementById('btnRenderAll')
     btn.addEventListener('click', () => {
 
-        fetch(`https://18.223.117.204/products`)
+        fetch(`http://18.223.117.204/products`)
             .then((resp) => resp.json())
             .then(data => {
                 const containerCard = document.getElementById('containerCard')
@@ -210,7 +210,7 @@ function renderSales() {
     const btn = document.getElementById('btnSalesAll')
     btn.addEventListener('click', () => {
 
-        fetch(`https://18.223.117.204/sales`)
+        fetch(`http://18.223.117.204/sales`)
             .then((resp) => resp.json())
             .then(data => {
                 const containerCard = document.getElementById('containerCard')
@@ -259,7 +259,7 @@ const detectBtnDetail = () => {
     btn.forEach(btn => {
         btn.addEventListener('click', () => {
             let producto = {}
-            fetch(`https://18.223.117.204/products/${btn.dataset.id}`)
+            fetch(`http://18.223.117.204/products/${btn.dataset.id}`)
                 .then((resp) => resp.json())
                 .then(data => {
                     const product = data

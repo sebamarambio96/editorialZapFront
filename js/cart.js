@@ -1,4 +1,4 @@
-fetch("https://18.223.117.204/products")
+fetch("http://18.223.117.204/products")
     .then((resp) => resp.json())
     .then(data => {
         const productos = data
@@ -196,7 +196,7 @@ function sendOrder() {
             name: inputNameCart,
             rut: newRut,
             email: inputEmailCart,
-            address: inputAddressCart,
+            addres: inputAddressCart,
             totalPrice,
             items
         }
@@ -216,9 +216,9 @@ function sendOrder() {
                 text: 'El rut ingresado no es valido'
             })
         } else {
-            fetch(`https://18.223.117.204/addOrder/`, {
+            fetch(`http://18.223.117.204/addOrder/`, {
                 method: 'POST',
-                headers: {
+                header: {
                     'Content-type': 'application/json'
                 },
                 body: JSON.stringify(data)
